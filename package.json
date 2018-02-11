@@ -1,0 +1,30 @@
+{
+  "name": "mean-stack-angular-2",
+  "version": "1.0.0",
+  "description": "Mean Stack with Angular 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitpareek49/mean-stack-angular-2.git"
+  },
+  "keywords": [
+    "Mean",
+    "Stack",
+    "Angular",
+    "2",
+    "Application"
+  ],
+  "author": "Amit Pareek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amitpareek49/mean-stack-angular-2/issues"
+  },
+  "homepage": "https://github.com/amitpareek49/mean-stack-angular-2#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^5.0.4"
+  }
+}

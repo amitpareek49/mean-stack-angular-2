@@ -17,6 +17,7 @@ import { AuthGuard } from './components/guards/auth.guard';
 import { NotAuthGuard } from './components/guards/notAuth.guard';
 import { BlogComponent } from './components/blog/blog.component';
 import { BlogEditComponent } from './components/blog/blog-edit/blog-edit.component';
+import { DeleteBlogComponent } from './components/blog/delete-blog/delete-blog.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BlogEditComponent } from './components/blog/blog-edit/blog-edit.compone
     LoginComponent,
     ProfileComponent,
     BlogComponent,
-    BlogEditComponent
+    BlogEditComponent,
+    DeleteBlogComponent
   ],
   imports: [
     BrowserModule,

@@ -64,12 +64,10 @@ module.exports = (router) => {
 		});
 		
 		router.get('/checkusername/:username', (req, res) => {
-			console.log(req.params.username);
 			if(!req.params.username) {
 				res.json({success: false, message: 'No username provided'});
 			} else {
 				User.findOne( {username: req.params.username } , (err, user) => {
-					console.log(user);
 					if(err){
 						res.json({success: false, message: err})
 					} else {
@@ -115,10 +113,7 @@ module.exports = (router) => {
 							if(!user){
 								res.json({ success: false, message: 'Username not found'});
 							} else {
-								console.log(user);
-								console.log(req.body.password);
 								const validPassword = user.comparePassword(req.body.password);
-								console.log(validPassword);
 								if(!validPassword) {
 									res.json({ success: false, message: 'Password not matching'});
 								} else {

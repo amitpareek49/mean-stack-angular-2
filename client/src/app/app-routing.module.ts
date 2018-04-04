@@ -10,6 +10,7 @@ import { NotAuthGuard } from './components/guards/notAuth.guard';
 import { BlogComponent } from './components/blog/blog.component';
 import { BlogEditComponent } from './components/blog/blog-edit/blog-edit.component'
 import { DeleteBlogComponent } from './components/blog/delete-blog/delete-blog.component';
+import { PublicProfileComponent } from './components/public-profile/public-profile.component';
 
 const appRoutes: Routes = [
   { 
@@ -49,6 +50,11 @@ const appRoutes: Routes = [
   {
     path: 'delete-blog/:id',
     component: DeleteBlogComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'user/:username',
+    component: PublicProfileComponent,
     canActivate: [AuthGuard]
   },
   { 

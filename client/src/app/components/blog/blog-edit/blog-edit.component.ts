@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BlogService } from '../../../service/blog.service';
-import { setTimeout } from 'timers';
 
 @Component({
   selector: 'app-blog-edit',

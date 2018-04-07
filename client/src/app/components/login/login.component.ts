@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   previousURL;
 
 
-  form: FormGroup;
+  form;
 
   constructor(private authService: AuthService, private formBuilder: FormBuilder,
               private router: Router, private authGuard: AuthGuard) {

@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const config = require('./config/database');
 const path = require('path');
 const bodyParser = require('body-parser');
-const cors = require('cors');
+//const cors = require('cors');
 //const port = process.env.PORT || 8000; 
 
 const authentication = require('./router/authentication')(router);
@@ -20,7 +20,7 @@ mongoose.connect(config.uri, (err) => {
 	}
 });
 
-app.use(cors({ origin: 'http://localhost:4200' }));
+//app.use(cors({ origin: 'http://localhost:4200' }));
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
  

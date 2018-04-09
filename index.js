@@ -6,7 +6,7 @@ const config = require('./config/database');
 const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const port = process.env.PORT || 8000; 
+//const port = process.env.PORT || 8000; 
 
 const authentication = require('./router/authentication')(router);
 const blogs = require('./router/blogs')(router);
@@ -35,6 +35,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
-app.listen(port, () => {
-	console.log('Listening in port '+ port);
+app.listen(process.env.PORT, () => {
+	console.log('Listening in port ');
 });

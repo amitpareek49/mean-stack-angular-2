@@ -28,7 +28,7 @@ $ npm install
 $ npm run build
 $ npm start
 ```
--- Access production server at: http://localhost:8080
+-- Access production server at: http://localhost:8000
 
 ## Development
 ```
@@ -41,4 +41,4 @@ $ npm start
 ```
 -- Access development server at: http://localhost:4200
 
--- Access API at: http://localhost:8080
+-- Access API at: http://localhost:8000

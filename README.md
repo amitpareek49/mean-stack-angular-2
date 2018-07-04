@@ -42,3 +42,8 @@ $ npm start
 -- Access development server at: http://localhost:4200
 
 -- Access API at: http://localhost:8000
+
+## Production Link 
+
+https://fast-garden-50348.herokuapp.com/
+

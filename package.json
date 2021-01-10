@@ -2,7 +2,8 @@
   "name": "mean-stack-angular-2",
   "version": "1.0.0",
   "engines": {
-    "npm": "5.7.1"
+    "npm": "5.7.1",
+    "node" : "10.0.0"
   },
   "description": "Mean Stack with Angular 2",
   "main": "index.js",

@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "engines": {
     "npm": "5.7.1",
-    "node" : "10.0.0"
+    "node": "10.0.0"
   },
   "description": "Mean Stack with Angular 2",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "cd client && ng build --prod"
+    "build": "cd client && ng build --prod && cd .. && node index.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
+    "cors": "^2.8.5",
     "express": "^4.16.2",
     "jsonwebtoken": "^8.2.0",
     "mongoose": "^5.0.4"

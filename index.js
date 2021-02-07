@@ -6,7 +6,7 @@ const config = require("./config/database");
 const path = require("path");
 const bodyParser = require("body-parser");
 //const cors = require("cors");
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 
 const authentication = require("./router/authentication")(router);
 const blogs = require("./router/blogs")(router);
